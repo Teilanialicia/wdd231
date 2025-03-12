@@ -5,13 +5,11 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "name": "Node: Current File",
             "type": "node",
             "request": "launch",
-            "name": "Launch Program",
-            "skipFiles": [
-                "<node_internals>/**"
-            ],
-            "program": "${workspaceFolder}\\script\\date.js"
+            "program": "${file}",
+            "console": "integratedTerminal"
         }
     ]
 }
