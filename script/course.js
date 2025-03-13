@@ -92,19 +92,34 @@ const cseBttn = document.getElementById("cse");
 let wddFilter = courses.filter(getWddCourses);
 let cseFilter = courses.filter(getCseCourses);
 
+let counter = 0;
+
 // adding event listening so that somehting happens when you hit the buttons.
 allBttn.addEventListener("click", function(){
-    newCourseCard(courses)
+    newCourseCard(courses);
+    counter++;
+
+    if (counter === 5)
+    {
+        document.getElementById("header-img").style.width = '3060px'
+        document.getElementById("header-img").src = 'https://i.pinimg.com/564x/19/0c/94/190c940175aa52442fd74f3bd35519f1.jpg'
+    }
+    else if (counter > 5)
+    {
+        document.getElementById("header-img").style.width = '80px'
+        document.getElementById("header-img").src = 'https://www.operationkindness.org/wp-content/uploads/blog-kitten-nursery-operation-kindness.jpg'
+        counter = 0
+    }
 });
 
 // remember! you are running the newCourseCard on the variable that is holding the result from running the filter method 
 wddBttn.addEventListener("click", function(){
-    newCourseCard(wddFilter)
+    newCourseCard(wddFilter);
 });
 
 // 
 cseBttn.addEventListener("click", function(){
-    newCourseCard(cseFilter)
+    newCourseCard(cseFilter);
 });
 
 
@@ -133,8 +148,17 @@ function newCourseCard(courses) {
         
         // we do not reference the whole Array, but instead a specific item in an Array, 
         // because the array doesnt have access to the information inside the item
-        rectangle.textContent = course.subject + course.number 
-
+        rectangle.textContent = course.subject + course.number
+        
+        // the course is completed, so give it a course-complete class
+        if (course.completed) {
+            rectangle.setAttribute('class', 'course-complete');
+        }
+        // the course is not completed, so give it a course-incomplete class
+        else
+        {
+            rectangle.setAttribute('class', 'course-incomplete');
+        }
 
         // once the P tag is created now you need to attach it somewhere in the document so you can actually see it. 
         document.getElementById("course-grid").appendChild(rectangle) 
@@ -145,6 +169,8 @@ function newCourseCard(courses) {
 
 
 };
+
+// document.body.style.backgroundColor = "#A9A9A9";
 
 // Dynamically display all the courses in the certificate section as shown in the example above. 
 // The courses that you have completed must be marked in a different way versus those that you have not completed. 

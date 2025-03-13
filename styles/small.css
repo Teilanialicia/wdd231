@@ -1,32 +1,188 @@
-:root { 
-    --cardinal: 0, 80, 64, 23;
-    --rusty_red: 0, 73, 66, 13;
-    --oxford_blue: 100, 100, 0, 87;
-    --fulvous: 0, 42, 92, 11;
-    --snow: 0, 2, 3, 2;
+:root {
+    --cardinal: rgb(158, 29, 53);
+    --rusty-red: rgb(186, 56, 49);
+    --oxford-blue: rgb(9, 13, 33);
+    --fulvous: rgb(225, 120, 37);
+    --snow: rgb(250, 250, 250);
 }
 
-nav{
-    
+p, a, h1, h2, h3 {
+    color: white;
+    font-size: medium;
+    font-family: "Alegreya", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: bold;
 }
 
-
-.subHeaderBackground{
-
+h1 {
+    padding: 0px;
+    margin: 0px;
 }
 
+header, footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--oxford-blue);
+    height: 10vh;
+}
+
+header img {
+    width: 80px;
+    margin-right: 2vw;
+}
+
+header h1 {
+    font-size: 34px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown {
+    position: absolute;
+    right: 1em;
+    top: 1em;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+footer {
+    flex-direction: column;
+    height: 8vh;
+    margin-top: 2vh;
+}
+
+footer p {
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+nav {
+    display: none;
+}
+
+nav a {
+    text-decoration: none;
+    font-size: larger;
+}
+
+.col-2 {
+    grid-column: span 2;
+}
+
+.col-3 {
+    grid-column: span 3;
+}
+
+.card {
+    margin: 1em;
+    background-color: lightgray; 
+    box-sizing: border-box;
+    border: 1px var(--oxford-blue) solid;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    overflow: hidden;
+}
+
+.card-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--oxford-blue);
+    height: 3rem;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+}
+
+.card-header h3 {
+    margin: 0;
+    font-size: x-large;
+    font-weight: 900;
+}
+
+.card-content {
+    padding: 1em;
+}
 
 .course-bttn-flex {
+    display: flex;
+    justify-content: center;
+}
+
+.course-bttn-flex button {
+    margin-left: .5em;
+    margin-right: .5em;
+    box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
+    height: 2em;
+    background-color: var(--oxford-blue);
+    color: var(--snow);
+}
+
+h3 {
     text-align: center;
 }
 
-.certificate-section {
-    margin-left: 10vw; 
-    margin-right: 10vw; 
-    width: 300px; 
-    height: 200px; 
-    background-color: lightgray; 
-    padding: 1rem; 
-    box-sizing: border-box; 
-    border: 2px solid gray; 
+button {
+    border-radius: 5px;
+    width: 10rem;
+}
+
+.canadaImg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.canadaImg img {
+    width: 100%;
+}
+
+.course-complete {
+    background-color: darkgrey;
+    color: black;
+    text-align: center;
+    border: 1px var(--oxford-blue) solid; 
+    border-radius: 5px;
+    margin-top: .5em;
+    margin-bottom: 0;
+    margin-left: 4em;
+    margin-right: 4em;
+    height: 2em;
+}
+
+.course-incomplete {
+    background-color: var(--rusty-red);
+    text-align: center;
+    border: 1px var(--oxford-blue) solid; 
+    border-radius: 5px;
+    margin-top: .5em;
+    margin-bottom: 0;
+    margin-left: 4em;
+    margin-right: 4em;
+    height: 2em;
+}
+
+#course-grid {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
 }

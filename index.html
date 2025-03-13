@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="script/course.js" defer ></script>
     <script src="script/date.js" defer ></script>
     <script src="script/navigation.js" defer ></script>
@@ -15,7 +16,19 @@
 </head>
 <body>
     <header>
+        <img src="/images/profile-picture.jpg" id="header-img">
         <h1>Teilani Norton</h1>
+        <div class="dropdown">
+            <a class="icon">
+                <i class="fa fa-bars"></i>
+            </a>
+            <div class="dropdown-content">
+                <a href="index.html">Home</a> 
+                <a href="">Chamber</a>
+                <a href="https://github.com/Teilanialicia">GitHub Profile</a>
+                <a href="">LinkedIn</a>
+            </div>
+        </div>
     </header>
     <nav>
        <a href="index.html">Home</a> 
@@ -24,36 +37,42 @@
        <a href="">LinkedIn</a>
     </nav>
     <main>
-        <h2>Home</h2>
-        <div>
-            <div class="subHeaderBackground">    
-            <h3>Course Work</h3>
-            </div>
-            <ul>
-                <li></li>
-                <li></li>
-                <li></li>
-            </ul>
-        </div>
-        <div>
-            <div class="subHeaderBackground">
-            <h3>Toronto, Canada</h3>
-            </div>
-            <aside></aside>
-        </div>
-        <div class="certificate-section">
-            <h3 >Web and Computer Programming Certificate</h3>
-                
-                <div class="course-bttn-flex">
-
-                    <button id="all">All</button>
-                    <button id="cse">CSE</button>
-                    <button id="wdd">WDD</button>
+        <div class="card-grid">
+            <div class="card col-2">
+                <div class="card-header">
+                    <h3>Course Work</h3>
                 </div>
-                <div id="course-grid">
-                    <p>Delete me, I dare you...</p>
+                <div class="card-content">
+                    <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
                 </div>
-                
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <h3>Toronto, Canada</h3>
+                </div>
+                <div class="card-content canadaImg">
+                    <img src="images/canada-flag.webp">
+                </div>
+            </div>
+            <div class="card col-3">
+                <div class="card-header">
+                    <h3 >Web and Computer Programming Certificate</h3>
+                </div>
+                <div class="card-content">
+                    <div class="course-bttn-flex">
+                        <button id="all">All</button>
+                        <button id="cse">CSE</button>
+                        <button id="wdd">WDD</button>
+                    </div>
+                    <div id="course-grid">
+                        <p>Delete me, I dare you...</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </main>
     <footer>

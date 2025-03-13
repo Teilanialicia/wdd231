@@ -2,7 +2,8 @@
 const date = new Date();
 // getting the year from the date object, using a "method"
 let year = date.getFullYear();
-let copyrightText = year + "©"
+let copyrightText = "©" + year + " Teilani Norton - Canada"
+let yearString = "Last Update: " + year
 
 // getting the element I want to change with the copyright year
 document.getElementById("copyright").innerText = copyrightText
