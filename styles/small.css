@@ -18,21 +18,12 @@ h1 {
     margin: 0px;
 }
 
-header, footer {
+footer {
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: var(--oxford-blue);
     height: 10vh;
-}
-
-header img {
-    width: 80px;
-    margin-left: 2vw;
-}
-
-header h1 {
-    font-size: 34px;
 }
 
 .dropdown-content {
@@ -142,16 +133,6 @@ h3 {
 button {
     border-radius: 5px;
     width: 10rem;
-}
-
-.canadaImg {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.canadaImg img {
-    width: 100%;
 }
 
 .course-complete {
