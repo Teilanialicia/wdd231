@@ -1,29 +1,21 @@
 @media (min-width: 32rem) {
 
-    /* header {
+    header {
         display: flex;
         align-items: end;
-        margin-left: 10%;
-        margin-right: 10%;
+        padding-left: 10%;
+        padding-right: 10%;
+        overflow: hidden;
+    }
+
+    header * {
+        margin-top: .5vh;
+        margin-bottom: .5vh;
     }
 
     nav {
-        margin: .2em;
         margin-left: auto;
     }
-
-    #logo {
-        display: flex;
-        align-items: end;
-    }
-
-    #logo * {
-        margin: .2em;
-    }
-
-    #logo img {
-        width: 200px;
-    } */
 
     nav {
         display: flex;
@@ -31,24 +23,38 @@
         align-items: center;
         background-color: var(--rusty-red);
         height: 5vh;
+        margin-right: 5vw;
     }
-    
-    .card-grid {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1.5fr 1fr;
-        padding-left: 2rem;
-        padding-right: 2rem;
+
+    nav a {
+        /* margin-bottom: 1vw; */
+        padding-left: 1.5vh;
+        padding-right: 1.5vh;
+        padding-top: 1vh;
+        padding-bottom: 1vh;
+        color: black;
+    }
+
+    nav a:hover {
+        text-decoration: underline;
+        background-color: var(--cardinal);
+    }
+
+    footer {
+        flex-direction: row;
+        justify-content: space-evenly;
     }
 
     .dropdown {
         display: none;
     }
 
-    #course-grid {
-        display: grid;
+    .member-grid {
         grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-        text-align: center;
+    }
+
+    .footer-info {
+        margin-top: 1vh;
+        margin-bottom: 1vh;
     }
 }

@@ -1,0 +1,65 @@
+ [
+    {
+        "name": "Muskoka Roastery Coffee Co.",
+        "address": "8 Crescent Rd Huntsville, Ontario P1H 0B3",
+        "phone": "(705) 789-9592",
+        "website": "https://www.muskokaroastery.com",
+        "image": "images/muskoka-coffee-logo.webp",
+        "membership level": 1,
+        "date founded": 2020 
+    },
+    {
+        "name": "Muskoka Stuffed Cookie Co.",
+        "address": "128 Main Street West Huntsville, ON P1H 1W5",
+        "phone": "7057897769",
+        "website": "https://www.muskokastuffedcookiecompany.com",
+        "image": "images/muskoka-stuffed-logo.png",
+        "membership level": 1,
+        "date founded": 2020 
+    },
+    {
+        "name": "Climb Muskoka Bracebridge",
+        "address": "24 Kirkhill Dr, Bracebridge, ON P1L 1R2, Canada",
+        "phone": "12495020895",
+        "website": "https://climbmuskoka.com/home",
+        "image": "images/climb-muskoka-logo.jpg",
+        "membership level": 1,
+        "date founded": 2020 
+    },
+    {
+        "name": "Muskoka Olive Oil Co.",
+        "address": "6 Manitoba Street Bracebridge, ON P1L 1R9",
+        "phone": "2495020967",
+        "website": "https://www.downtownbracebridge.com/taste-directory/muskoka-olive-oil-co",
+        "image": "images/muskoka-olive-logo.jpg",
+        "membership level": 1,
+        "date founded": 2020
+    },
+    {
+        "name": "The Muskoka Sauna Co.",
+        "address": "2195 Frank Miller Memorial Rte, Torrance, ON P1P 1R2, Canada",
+        "phone": "17052048672",
+        "website": "themuskokasaunaco.com",
+        "image": "images/muskoka-sauna-logo.png",
+        "membership level": 1,
+        "date founded": 2020 
+    },
+    {
+        "name": "Muskoka Brewery",
+        "address": "1964 Muskoka Beach Rd. Bracebridge, ON P1P 1V4",
+        "phone": "7056461266",
+        "website": "https://ontariocraftbrewers.com/brewery-profile/muskoka-brewery/",
+        "image": "images/muskoka-brewery-logo.jpg",
+        "membership level": 1,
+        "date founded": 2020 
+    },
+    {
+        "name": "Muskoka Boat Gallery",
+        "address": "2 Lee Valley Drive Port Carling, ON, CA",
+        "phone": "18448556789",
+        "website": "https://muskoka-surf-company.myshopify.com",
+        "image": "images/muskoka-boat-logo.png",
+        "membership level": 1,
+        "date founded": 2020  
+    }
+ ]
