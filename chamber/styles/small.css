@@ -21,6 +21,7 @@ h1 {
 header {
     background-color: var(--rusty-red);
     padding-left: 1vw;
+    color: white;
 }
 
 footer {
@@ -31,6 +32,7 @@ footer {
     height: 8vh;
     margin-top: 2vh;
     height: fit-content;
+    color: white;
 }
 
 header img {
@@ -109,7 +111,7 @@ button {
 
 .member-grid {
     display: grid;
-    grid-template-columns: 1;
+    grid-template-columns: 1fr;
     margin-left: 16vw;
     margin-right: 16vw;
 }

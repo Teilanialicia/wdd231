@@ -15,7 +15,7 @@
 
     nav {
         margin-left: auto;
-    }
+    }  
 
     nav {
         display: flex;
@@ -24,6 +24,7 @@
         background-color: var(--rusty-red);
         height: 5vh;
         margin-right: 5vw;
+        
     }
 
     nav a {
@@ -32,7 +33,7 @@
         padding-right: 1.5vh;
         padding-top: 1vh;
         padding-bottom: 1vh;
-        color: black;
+        color: white;
     }
 
     nav a:hover {
