@@ -15,7 +15,7 @@ getMemberInfo()
         memberCards(randomMembers);
     });
 
-// Huntsville,CA
+// Muskoka, CA
 const latitude = "45.34";
 const longitude = "-79.23"
 

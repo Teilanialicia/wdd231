@@ -1,15 +1,13 @@
 export async function getMemberInfo(){
-    const url = "https://github.com/Teilanialicia/wdd231/blob/main/chamber/data/members.json";
+    // const url = "https://github.com/Teilanialicia/wdd231/blob/main/chamber/data/members.json";
     // const url = "http://localhost:5500/chamber/data/members.json"
+    const url = "https://api.github.com/repos/Teilanialicia/wdd231/contents/chamber/data/members.json";
 
     try {
         const response = await fetch(url);
-        if (!response.ok) {
-            throw new Error(`Response status: ${response.status}`);
-        }
-  
-        const json = await response.json();
-        console.log(json);
+        const data = await response.json();
+
+        const json = JSON.parse(atob(data.content));
 
         return json;
 
