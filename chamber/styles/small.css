@@ -13,6 +13,10 @@ p, a, h1, h2, h3, h6 {
     margin: 0;
 }
 
+html {
+    width: 100%;
+}
+
 h1 {
     padding: 0px;
     margin: 0px;
@@ -29,15 +33,9 @@ footer {
     padding-left: 1vw;
     background-color: var(--rusty-red);
     flex-direction: column;
-    height: 8vh;
     margin-top: 2vh;
     height: fit-content;
     color: white;
-}
-
-header img {
-    width: 80px;
-    margin-left: 2vw;
 }
 
 .dropdown-content {
@@ -112,11 +110,11 @@ button {
 .member-grid {
     display: grid;
     grid-template-columns: 1fr;
-    margin-left: 16vw;
-    margin-right: 16vw;
+    margin-left: 1em;
+    margin-right: 1em;
 }
 
-.card {
+.member-card {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -127,13 +125,19 @@ button {
     border: 1px var(--oxford-blue) solid;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     overflow: hidden;
+    padding: 1em;
 }
 
-.card p {
+.member-grid div:first-child {
+    margin-top: 2em;
+}
+
+.member-card p {
     text-align: center;
+    font-size: 1.15em;
 }
 
-.card img {
+.member-card img {
     width: 10vh;
 }
 
@@ -189,4 +193,73 @@ button {
 
 .member-name-show {
     display: block;
+}
+
+
+.card {
+    margin-left: 1em;
+    margin-right: 1em;
+    margin-top: 2em;
+    background-color: lightgray; 
+    box-sizing: border-box;
+    border: 1px var(--oxford-blue) solid;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    overflow: hidden;
+}
+
+.card-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--rusty-red);
+    height: 3rem;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+}
+
+.card-header h3 {
+    margin: 0;
+    font-size: x-large;
+    font-weight: 900;
+}
+
+.card-content {
+    padding: 1em;
+}
+
+.card-content p {
+    font-size: 1.5em;
+}
+
+#weather-current {
+    display: flex;
+    justify-content: center;
+    left: 1em;
+    top: 1em;
+}
+
+#weather-current :last-child {
+    grid-column: span 2;
+}
+
+.main-grid {
+    display: grid;
+}
+
+#hero-image {
+    display: flex;
+    justify-content: center;
+}
+
+#hero-image img {
+    width: 98%;
+    height: 20em;
+}
+
+#home {
+    font-size: 3.2em;
+    text-align: left;
+    margin-left: .25em;
+    margin-top: 1em;
 }

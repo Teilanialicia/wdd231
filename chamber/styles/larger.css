@@ -42,7 +42,7 @@
     }
 
     footer {
-        flex-direction: row;
+        flex-direction: row;  
         justify-content: space-evenly;
     }
 
@@ -57,5 +57,29 @@
     .footer-info {
         margin-top: 1vh;
         margin-bottom: 1vh;
+    }
+
+    #weather-current :last-child {
+        grid-column: auto;
+        justify-self: left;
+    }
+
+    .member-grid div:first-child {
+        margin-top: 1em;
+    }
+
+    .main-grid {
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr;
+        grid-auto-flow: row dense; /* Ensures items fill in naturally */
+    }
+
+    .main-grid > :last-child {
+        grid-column: span 3;
+    }
+
+    #hero-image img {
+        width: 98%;
+        height: 50em;
     }
 }

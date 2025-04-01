@@ -3,35 +3,103 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <script src="scripts/index.js" type="module" defer ></script>
+    <title>Home Page</title>
 </head>
 <body>
     <header>
         <!-- Logo and name -->
         <div id="logo">
-            <img src="../images/lo">
+            <img src="images/logo-transparent.png">
             <div class="header-name">
                 <h1>Timbuktu</h1>
                 <p>Chamber of Commerce</p>
             </div>
         </div>
         <nav>
-            <a href="../index.html">Home</a> 
-            <a href="">Directory</a>
+            <a href="index.html">Home</a> 
+            <a href="directory.html">Directory</a>
             <a href="https://github.com/Teilanialicia">Join</a>
             <a href="">Discover</a>
         </nav>
         <div class="dropdown">
-            <a class="icon">
-                <i class="fa fa-bars"></i>
-            </a>
+            <a class="icon">☰</a>
             <div class="dropdown-content">
-                <a href="../index.html">Home</a>
+                <a href="index.html">Home</a>
                 <a href="directory.html">Directory</a>
-                <a href="">Join</a>
+                <a href="https://github.com/Teilanialicia">Join</a>
                 <a href="">Discover</a>
             </div>
         </div>
     </header>
+    <main>
+        <div id="hero-image">
+            <img src="images/muskoka-hero-image.jpg">
+        </div>
+        <h3 id="home">Home</h3>
+        <div class="main-grid">
+            <div class="card">
+                <div class="card-header">
+                    <h3>Events</h3>
+                </div>
+                <div class="card-content">
+
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <h3>Current Weather</h3>
+                </div>
+                <div class="card-content" id="weather-current">
+                    <div>
+                        <img id="weather-icon" src="images/weather-favicons/cloud-snow.png">
+                    </div>
+                    <div>
+                        <p>35 F</p>
+                        <p>Snowy</p>
+                        <p>Humidity: </p>
+                        <p>Sunrise: </p>
+                        <p>Sunset: </p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <h3>Weather Forecast</h3>
+                </div>
+                <div class="card-content" id="weather-forecast">
+                    <p id="today">Today: </p>
+                    <p id="tomorrow"></p>
+                    <p id="overmorrow"></p>
+                </div>
+            </div>
+            <div class="member-grid">
+
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-info">
+            <h3>Timbuktu Chamber of Commerce</h3>
+            <p>10 Rue De La Paix</p>
+            <p>Timbuktu, Mali 999</p>
+            <p>info@timbuktucc.org</p>
+            <p>(223) 555-2300</p>
+        </div>
+        <div id="social-media">
+            <a href="https://facebook.com"><img src="images/facebook_icon.svg" alt="facebook icon"></a>
+            <a href="https://twitter.com"><img src="images/twitter_icon.svg" alt="twitter icon"></a>
+            <a href="https://youtube.com"><img src="images/youtube_icon.svg" alt="youtube icon"></a>
+        </div>
+        <div class="footer-info">
+            <p>WDD231 Class Project</p>
+            <p>Teilani Norton</p>
+            <p id="copyright"></p>
+            <p id="last-modified"></p>
+        </div>
+    </footer>
 </body>
 </html>
