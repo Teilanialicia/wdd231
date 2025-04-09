@@ -1,5 +1,5 @@
-import { 
-    getMemberInfo, 
+import {
+    getMemberInfo,
     memberCards,
     getRandomMembers,
     getWeather,
@@ -9,7 +9,10 @@ import {
 // Create the 3 random member cards
 getMemberInfo()
     .then(members => {
-        return getRandomMembers(members);
+        // Filter the members to only be gold and silver members
+        return getRandomMembers(members.filter(member => {
+            return member["membership level"] > 1;
+    }));
     })
     .then(randomMembers => {
         memberCards(randomMembers);
@@ -28,7 +31,7 @@ getWeather(latitude, longitude)
 getForecast(latitude, longitude)
     .then(forecastData => {
         if (forecastData)
-                displayForecast(forecastData);
+            displayForecast(forecastData);
     })
 
 
@@ -62,6 +65,7 @@ function displayWeather(weatherData) {
 
     weatherIcon.src = weatherIconUrl;
     weatherIcon.id = "weather-icon";
+    weatherIcon.alt = weatherData.weather[0].description;
     temperature.innerText = `${Math.round(weatherData.main.temp)} °C`;
     weather.innerText = String(weatherData.weather[0].description).charAt(0).toUpperCase() + String(weatherData.weather[0].description).slice(1);
     humidity.innerText = `Humidity: ${weatherData.main.humidity}`;
@@ -77,7 +81,7 @@ function displayWeather(weatherData) {
     weatherTextDiv.appendChild(humidity);
     weatherTextDiv.appendChild(sunriseTime);
     weatherTextDiv.appendChild(sunsetTime);
-    
+
     weatherCardDiv.appendChild(weatherIconDiv);
     weatherCardDiv.appendChild(weatherTextDiv);
 }

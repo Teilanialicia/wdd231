@@ -1,3 +1,21 @@
+// this needs to run on every page to set up the mobile menu - since every page uses this javascript, I'll just put it here
+document.querySelector(".dropdown").addEventListener("click", () => {
+    const dropdownContent = document.querySelector(".dropdown-content");
+
+    if (window.getComputedStyle(dropdownContent).display === "block")
+        dropdownContent.style.display = "none";
+    else
+        dropdownContent.style.display = "block";
+})
+
+document.addEventListener("click", function (event) {
+    const dropdownContent = document.querySelector(".dropdown-content");
+    const dropdownIcon = document.querySelector(".fa-bars");
+    if (event.target !== dropdownIcon) {
+        dropdownContent.style.display = "none"; // Close modal if background is clicked
+    }
+});
+
 export async function getMemberInfo(){
     // const url = "https://github.com/Teilanialicia/wdd231/blob/main/chamber/data/members.json";
     // const url = "http://localhost:5500/chamber/data/members.json"
@@ -16,12 +34,12 @@ export async function getMemberInfo(){
     }
 }
 
-export async function memberCards(members, gridClassName="member-grid") {
+export async function memberCards(members, gridClassName = "member-grid") {
     const display = document.querySelector("." + gridClassName);
 
     // we need to set the innerHTML to "" to make sure it is empty every time we run the memberCards function, otherwise it will keep adding to what is already there.
     document.querySelector("." + gridClassName).innerHTML = ""
- 
+    
     members.forEach(member => {
         let card = document.createElement("div");
         let address = document.createElement("p");
@@ -29,22 +47,23 @@ export async function memberCards(members, gridClassName="member-grid") {
         let website = document.createElement("a");
         let logo = document.createElement("img");
         let name = document.createElement("p");
-        
-        card.className = "member-card"
-        logo.src = member.image
-        address.textContent = member.address 
-        phone.textContent = member.phone
-        website.href = member.website
-        website.textContent = "Visit website"
+
+        card.className = "member-card";
+        logo.src = member.image;
+        logo.alt = member.name;
+        address.textContent = member.address;
+        phone.textContent = member.phone;
+        website.href = member.website;
+        website.textContent = "Visit website";
         name.innerText = member.name;
-        name.className = "member-name-hide"
+        name.className = "member-name-hide";
 
         card.appendChild(name);
         card.appendChild(logo);
         card.appendChild(address);
         card.appendChild(phone);
         card.appendChild(website);
-        document.querySelector("." + gridClassName).appendChild(card);   
+        document.querySelector("." + gridClassName).appendChild(card);
     });
 };
 
@@ -75,7 +94,7 @@ export function addClickListener() {
 export async function getRandomMembers(members) {
     let randomMembers = [];
     for(let i=0; i < 3; i++) {
-        const randomInt = getRandomInt(0, members.length-1)
+        const randomInt = getRandomInt(0, members.length-1);
         randomMembers.push(members[randomInt]);
         members.splice(randomInt, 1);
     }
@@ -91,7 +110,7 @@ export function getRandomInt(min, max) {
 
 export async function getWeather(latitude, longitude) {
     const apiKey = 'ee55d100f0f66097498f60fcc17f2840';
-    const weatherCacheKey = 'weatherData'
+    const weatherCacheKey = 'weatherData';
     // 3600000
     const cacheExpiry = 3600000; // Cache duration (e.g., 1 hour in milliseconds)
     // Check for cached data and timestamp
@@ -160,4 +179,14 @@ export async function getForecast(latitude, longitude) {
         console.error('Error fetching weather data:', error);
         return null;
     }
+}
+
+export async function openModal(modalId) {
+    let modal = document.getElementById(modalId);
+    modal.showModal();
+}
+
+export async function closeModal(modalId) {
+    let modal = document.getElementById(modalId);
+    modal.close();
 }

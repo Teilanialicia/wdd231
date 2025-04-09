@@ -1,7 +1,7 @@
 import {
-    getMemberInfo, 
-    memberCards, 
-    addClickListener 
+    getMemberInfo,
+    memberCards,
+    addClickListener
 } from "./functions.js";
 
 getMemberInfo()

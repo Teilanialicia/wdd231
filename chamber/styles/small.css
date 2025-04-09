@@ -1,12 +1,13 @@
 :root {
     --cardinal: rgb(158, 29, 53);
-    --rusty-red: rgb(186, 56, 49);
+    --rusty-red: rgb(185, 56, 49);
     --oxford-blue: rgb(9, 13, 33);
     --fulvous: rgb(225, 120, 37);
     --snow: rgb(250, 250, 250);
 }
 
-p, a, h1, h2, h3, h6 {
+p,
+a {
     font-size: medium;
     font-family: "Alegreya", serif;
     font-weight: 500;
@@ -20,6 +21,10 @@ html {
 h1 {
     padding: 0px;
     margin: 0px;
+}
+
+h4 {
+    margin: 0;
 }
 
 header {
@@ -36,6 +41,7 @@ footer {
     margin-top: 2vh;
     height: fit-content;
     color: white;
+    align-items: flex-start;
 }
 
 .dropdown-content {
@@ -44,14 +50,8 @@ footer {
     right: 0;
     background-color: #f1f1f1;
     min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
-}
-
-.dropdown {
-    position: absolute;
-    right: 1em;
-    top: 1em;
 }
 
 .dropdown-content a {
@@ -61,9 +61,10 @@ footer {
     display: block;
 }
 
-/* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-content {
-    display: block;
+.dropdown {
+    position: absolute;
+    right: 1em;
+    top: 1em;
 }
 
 nav {
@@ -77,6 +78,7 @@ nav a {
 
 h3 {
     text-align: center;
+    margin: 0;
 }
 
 button {
@@ -92,19 +94,17 @@ button {
 #social-media img {
     margin: 1vh;
     width: 4vh;
+    height: 4vh;
+}
+
+#logo-container {
+    display: flex;
+    justify-content: left;
 }
 
 #logo {
-    display: flex;
-    align-items: end;
-}
-
-#logo * {
-    margin: .2em;
-}
-
-#logo img {
     width: 200px;
+    height: auto;
 }
 
 .member-grid {
@@ -114,18 +114,29 @@ button {
     margin-right: 1em;
 }
 
-.member-card {
+.member-grid .member-card {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     margin: 1em;
-    background-color: lightgray; 
+    background-color: lightgray;
     box-sizing: border-box;
     border: 1px var(--oxford-blue) solid;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     overflow: hidden;
     padding: 1em;
+}
+
+.list .member-card {
+    background-color: lightgray;
+    box-sizing: border-box;
+    border: 1px var(--oxford-blue) solid;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    overflow: hidden;
+    width: 100%;
+    font-size: 10px;
+    margin: 0;;
 }
 
 .member-grid div:first-child {
@@ -142,49 +153,50 @@ button {
 }
 
 .list {
-	display: flex;
-	flex-direction: column;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
 }
 
 .list div {
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr 1fr;
-	margin-left: 10vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-left: 10vh;
     margin-right: 10vh;
     margin-top: 0;
     margin-bottom: 0;
-	padding: 0.25rem;
+    padding: 0.25rem;
 }
 
-.list div > * {
-	margin: 0 1rem;
+.list div>* {
+    margin: 0 1rem;
 }
 
 .list div img {
-	display: none; /* smaller viewports only */
+    display: none;
 }
 
 .list div h3 {
-	font-size: 1rem;
-	font-family: Roboto, Helvetica, sans-serif;
+    font-size: 1rem;
+    font-family: Roboto, Helvetica, sans-serif;
 }
 
 .list div:nth-child(even) {
-	background-color: #bed;
+    background-color: #bed;
 }
 
 
 .menu {
-	margin: 1rem auto;
-	border: 1px solid rgba(0, 0, 0, 0.1);
-	padding: 0.5rem;
-	background-color: #bed;
-	text-align: center;
+    margin: 1rem auto;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 0.5rem;
+    background-color: #bed;
+    text-align: center;
 }
 
 .menu button {
-	padding: 1rem;
-	font-weight: 700;
+    padding: 1rem;
+    font-weight: 700;
 }
 
 .member-name-hidden {
@@ -200,7 +212,7 @@ button {
     margin-left: 1em;
     margin-right: 1em;
     margin-top: 2em;
-    background-color: lightgray; 
+    background-color: lightgray;
     box-sizing: border-box;
     border: 1px var(--oxford-blue) solid;
     border-radius: 15px;
@@ -248,18 +260,146 @@ button {
 }
 
 #hero-image {
-    display: flex;
-    justify-content: center;
+    width: 100%;
+    height: 100%;
 }
 
-#hero-image img {
-    width: 98%;
-    height: 20em;
-}
 
 #home {
-    font-size: 3.2em;
+    font-size: 2em;
     text-align: left;
-    margin-left: .25em;
+    margin: 0;
+    padding-left: .5em;
+}
+
+form {
+    display: grid;
+}
+
+label {
     margin-top: 1em;
+    margin-left: 2vh;
+    font-size: 1.2em;
+}
+
+input,
+select {
+    margin-bottom: 1em;
+    height: 32px;
+    margin-left: 2vh;
+    width: 75%;
+    font-size: 1.25em;
+}
+
+.input-field {
+    background-color: white;
+    border-radius: 3px;
+}
+
+.input-field:required {
+    border-left: 8px solid var(--rusty-red);
+}
+
+.input-field:optional {
+    border-left: 8px solid var(--oxford-blue);
+}
+
+textarea {
+    height: 64px;
+    margin-bottom: 1em;
+    margin-left: 2vh;
+    width: 75%;
+}
+
+:modal {
+    background-color: var(--rusty-red);
+    animation: fadeIn .5s;
+    /* color: var(--rusty-red); */
+}
+
+.modal-content {
+    background: white;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+    /* background-color: var(--rusty-red); */
+}
+
+.modal-card {
+    border: 3px solid black;
+    margin: 1em;
+}
+
+#info-icon {
+    width: 25px;
+    height: 25px;
+    margin-right: 10%;
+}
+
+#membership-dropdown {
+    display: flex;
+    align-items: center;
+}
+
+#membership-cards {
+    display: none;
+}
+
+.hide {
+    display: none;
+}
+
+.hero-container {
+    position: relative;
+}
+
+#call-to-action{
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    color: white;
+    width: 60%;
+    display: flex;
+    align-items: flex-end;
+}
+
+#call-to-action a {
+    display: inline-block;
+    background-color: var(--rusty-red);
+    color: white;
+    padding: 0.6em 1.2em;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    align-content: center;
+}
+  
+#call-to-action a:hover {
+    transform: scale(1.05);
+}
+
+#call-to-action a:active {
+    transform: scale(0.97);
+}
+
+dialog {
+    width: 100%;
+}
+
+.thankyou {
+    text-align: left;
+}
+
+.hidden {
+    display: none;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
 }

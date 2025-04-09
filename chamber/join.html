@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Muskoka Chamber of Commerce Page">
+    <meta name="author" content="Teilani Norton">
+    <meta property="og:title" content="Musokoka Chamber of Commerce" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://teilanialicia.github.io/wdd231/chamber/join.html" />
+    <meta property="og:image" content="https://ia.media-imdb.com/images/rock.jpg" />
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="../favicon.png" type="image/x-icon">
+    <script src="scripts/join.js" type="module" defer></script>
+    <title>Teilani Norton | WDD231 Muskoka Chamber of Commerce Page</title>
+</head>
+
+<body>
+    <header>
+        <!-- Logo and name -->
+        <div id="logo-container">
+            <img id="logo" src="images/logo.webp" alt="Company Logo">
+        </div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="directory.html">Directory</a>
+            <a href="join.html">Join</a>
+            <a href="join.html">Discover</a>
+        </nav>
+        <div class="dropdown">
+            <i class="fa fa-bars fa-2x"></i>
+            <div class="dropdown-content">
+                <a href="index.html">Home</a>
+                <a href="directory.html">Directory</a>
+                <a href="join.html">Join</a>
+                <a href="">Discover</a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <h1>Teilani Norton | WDD231</h1>
+        <div class="flex-row">
+            <form id="form" action="thankyou.html" method="get">
+                <label>
+                    First Name:
+                </label>
+                <input class="input-field" type="text" name="first_name" required title="Enter your first name" autocomplete="given-name">
+                <label>
+                    Last Name:
+                </label>
+                <input class="input-field" type="text" name="last_name" required title="Enter your last name" autocomplete="family-name">
+                <label>
+                    Organization Title:
+                </label>
+                <input class="input-field" type="text" name="organization_title" optional title="Enter your title" autocomplete="organization-title"
+                    pattern="^[a-zA-Z\-\s]{7,}$">
+                <label>
+                    Email:
+                </label>
+                <input class="input-field" type="email" name="email" required title="Enter your email" autocomplete="email"
+                    placeholder="example@email.com">
+                <label>
+                    Mobile Phone:
+                </label>
+                <input class="input-field" type="tel" name="phone" required title="Enter your phone number" autocomplete="tel">
+                <label>
+                    Organization Name:
+                </label>
+                <input class="input-field" type="text" name="organization" required title="Enter organization name"
+                    autocomplete="organization">
+                <div class="input-field" id="membership-dropdown">
+                    <div>
+                        <label for="membership_level">
+                            Membership Level
+                        </label>
+                        <select id="membership_level" name="membership_level">
+                            <option value="np">NP Membership (No Fee)</option>
+                            <option value="bronze">Bronze Membership</option>
+                            <option value="silver">Silver Membership</option>
+                            <option value="gold">Gold Membership</option>
+                        </select>
+                    </div>
+                    <img id="info-icon" src="images/information-button.png" alt="info icons"
+                        onclick="openModal('membership-cards-modal')">
+                </div>
+                <label>
+                    Organization Description:
+                </label>
+                <textarea name="description" title="Describe your organization"></textarea>
+                <input class="hidden" type="text" name="timestamp" id="timestamp" readonly>
+                <input id="submit" type="submit" value="Add New Membership">
+            </form>
+
+            <script>
+                const form = document.getElementById("form");
+              
+                form.addEventListener("submit", (event) => {
+                  const input = document.getElementById("timestamp");
+                  const now = new Date();
+                  input.value = now.toISOString();
+                });
+            </script>
+
+            <div id="membership-cards">
+                <div class="modal-content">
+                    <div class="modal-card" id="np-card">
+                        <h4>NP Membership</h4>
+                        <a href="#" onclick="openModal('np-modal')">Learn More</a>
+                    </div>
+                    <div class="modal-card" id="bronze-card">
+                        <h4>Bronze Membership</h4>
+                        <a href="#" onclick="openModal('bronze-modal')">Learn More</a>
+                    </div>
+                    <div class="modal-card" id="silver-card">
+                        <h4>Silver Membership</h4>
+                        <a href="#" onclick="openModal('silver-modal')">Learn More</a>
+                    </div>
+                    <div class="modal-card" id="gold-card">
+                        <h4>Gold Membership</h4>
+                        <a href="#" onclick="openModal('gold-modal')">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Modals -->
+        <dialog id="membership-cards-modal">
+            <div class="modal-content">
+                <h3>Our Memberships:</h3>
+                <div class="modal-card" id="np-card">
+                    <h4>Non-Profit</h4>
+                    <a href="#" onclick="openModal('np-modal')">Learn More</a>
+                </div>
+                <div class="modal-card" id="bronze-card">
+                    <h4>Bronze</h4>
+                    <a href="#" onclick="openModal('bronze-modal')">Learn More</a>
+                </div>
+                <div class="modal-card" id="silver-card">
+                    <h4>Silver</h4>
+                    <a href="#" onclick="openModal('silver-modal')">Learn More</a>
+                </div>
+                <div class="modal-card" id="gold-card">
+                    <h4>Gold</h4>
+                    <a href="#" onclick="openModal('gold-modal')">Learn More</a>
+                </div>
+            </div>
+            <form method="dialog">
+                <button>Close</button>
+            </form>
+        </dialog>
+        <dialog id="np-modal">
+            <div class="modal-content">
+                <div class="modal-card">
+                    <p>NP Membership includes access to free resources and community events.</p>
+                </div>
+            </div>
+            <form method="dialog">
+                <button>Close</button>
+            </form>
+        </dialog>
+        <dialog id="bronze-modal">
+            <div class="modal-content">
+                <div class="modal-card">
+                    <p>Bronze Membership includes additional training and networking events.</p>
+                </div>
+            </div>
+            <form method="dialog">
+                <button>Close</button>
+            </form>
+        </dialog>
+        <dialog id="silver-modal">
+            <div class="modal-content">
+                <div class="modal-card">
+                    <p>Silver Membership includes advertising benefits and event discounts.</p>
+                </div>
+            </div>
+            <form method="dialog">
+                <button>Close</button>
+            </form>
+        </dialog>
+        <dialog id="gold-modal">
+            <div class="modal-content">
+                <div class="modal-card">
+                    <p>Gold Membership includes premium advertising, VIP event access, and more.</p>
+                </div>
+            </div>
+            <form method="dialog">
+                <button>Close</button>
+            </form>
+        </dialog>
+    </main>
+    <footer>
+        <div class="footer-info">
+            <h3>Muskoka Chamber of Commerce</h3>
+            <p>10 Rue De La Paix</p>
+            <p>Muskoka, Mali 999</p>
+            <p>info@Muskokacc.org</p>
+            <p>(223) 555-2300</p>
+        </div>
+        <div id="social-media">
+            <a href="https://facebook.com"><img src="images/facebook_icon.svg" alt="facebook icon"></a>
+            <a href="https://twitter.com"><img src="images/twitter_icon.svg" alt="twitter icon"></a>
+            <a href="https://youtube.com"><img src="images/youtube_icon.svg" alt="youtube icon"></a>
+        </div>
+        <div class="footer-info">
+            <p>WDD231 Class Project</p>
+            <p>Teilani Norton</p>
+            <p id="copyright"></p>
+            <p id="last-modified"></p>
+        </div>
+    </footer>
+</body>
+
+</html>

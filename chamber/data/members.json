@@ -23,7 +23,7 @@
         "phone": "12495020895",
         "website": "https://climbmuskoka.com/home",
         "image": "images/climb-muskoka-logo.jpg",
-        "membership level": 1,
+        "membership level": 2,
         "date founded": 2020 
     },
     {
@@ -32,7 +32,7 @@
         "phone": "2495020967",
         "website": "https://www.downtownbracebridge.com/taste-directory/muskoka-olive-oil-co",
         "image": "images/muskoka-olive-logo.jpg",
-        "membership level": 1,
+        "membership level": 3,
         "date founded": 2020
     },
     {
@@ -50,7 +50,7 @@
         "phone": "7056461266",
         "website": "https://ontariocraftbrewers.com/brewery-profile/muskoka-brewery/",
         "image": "images/muskoka-brewery-logo.jpg",
-        "membership level": 1,
+        "membership level": 3,
         "date founded": 2020 
     },
     {
@@ -59,7 +59,7 @@
         "phone": "18448556789",
         "website": "https://muskoka-surf-company.myshopify.com",
         "image": "images/muskoka-boat-logo.png",
-        "membership level": 1,
+        "membership level": 2,
         "date founded": 2020  
     }
  ]

@@ -2,56 +2,58 @@
 <html lang="en">
 <head>
    
-    <script src="scripts/index.js" type="module" ></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Muskoka Chamber of Commerce Page">
     <meta name="author" content="Teilani Norton">
-    <meta property="og:title" content="Muskoka Chamber of Commerce">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://teilanialicia.github.io/wdd231/chamber/directory.html">
-    <meta property="og:image" content="https://ia.media-imdb.com/images/rock.jpg">
-    <link rel="stylesheet" href="styles/normalize.css">
+    <meta property="og:title" content="Musokoka Chamber of Commerce" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://teilanialicia.github.io/wdd231/chamber/index.html" />
+    <meta property="og:image" content="https://ia.media-imdb.com/images/rock.jpg" />
+    <link rel="stylesheet" href="styles/normalize.css" defer>
     <link rel="stylesheet" href="styles/small.css">
-    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/larger.css" defer>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="icon" href="../favicon.png" type="image/x-icon">
-    <title>Muskoka Chamber of Commerce Page</title>
+    <script src="scripts/index.js" type="module" defer></script>
+    <title>Muskoka's Voice of Business</title>
 </head>
 <body>
     <header>
-        <div id="logo">
-            <img src="images/logo-transparent.png" alt="Company Logo">
-            
-            <!-- <div class="header-name">
-                
-                <p>Chamber of Commerce</p>
-            </div> -->
+        <div id="logo-container">
+            <img id="logo" src="images/logo.webp" alt="Company Logo">
         </div>
         <nav>
-            <a href="index.html">Home</a> 
+            <a href="index.html">Home</a>
             <a href="directory.html">Directory</a>
-            <a href="https://github.com/Teilanialicia">Join</a>
+            <a href="join.html">Join</a>
             <a href="">Discover</a>
         </nav>
         <div class="dropdown">
-            <a class="icon">☰</a>
+            <i class="fa fa-bars fa-2x"></i>
             <div class="dropdown-content">
                 <a href="index.html">Home</a>
                 <a href="directory.html">Directory</a>
-                <a href="https://github.com/Teilanialicia">Join</a>
-                <a href="">Discover</a>
+                <a href="join.html">Join</a>
+                <a href="join.html">Discover</a>
             </div>
         </div>
     </header>
     <main>
         <!-- Logo and name -->
-        <h1>Muskoka Chamber of Commerce Page</h1>
-        <div id="hero-image">
-            <img src="images/muskoka-hero-image.jpg" alt="Scenic view of Muskoka landscape">
+        <div class="hero-container">
+            <div id="call-to-action">
+                <h1>Muskoka's Voice of Business</h1>
+                <a href="join.html">Join now</a>
+            </div>
+            <picture>
+                <source media="(min-width: 32rem)" srcset="images/muskoka-hero-image-large.webp">
+                <img id="hero-image" src="images/muskoka-hero-image-small.webp" alt="Scenic view of Muskoka landscape">
+            </picture>
         </div>
         <h3 id="home">Home</h3>
         <div class="main-grid">
@@ -92,7 +94,10 @@
                 </div>
             </div>
             <div class="member-grid">
-
+                <div class="member-card"></div>
+                <div class="member-card"></div>
+                <div class="member-card"></div>
+                <div class="member-card"></div>
             </div>
         </div>
     </main>
