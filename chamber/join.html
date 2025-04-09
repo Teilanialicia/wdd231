@@ -60,7 +60,7 @@
                 <label>
                     Organization Title:
                 </label>
-                <input class="input-field" type="text" name="organization_title" optional title="Enter your title" autocomplete="organization-title"
+                <input class="input-field" type="text" name="organization_title" title="Enter your title" autocomplete="organization-title"
                     pattern="^[a-zA-Z\-\s]{7,}$">
                 <label>
                     Email:
@@ -95,7 +95,7 @@
                     Organization Description:
                 </label>
                 <textarea name="description" title="Describe your organization"></textarea>
-                <input class="hidden" type="text" name="timestamp" id="timestamp" readonly>
+                <input class="hidden" type="hidden text" name="timestamp" id="timestamp" readonly>
                 <input id="submit" type="submit" value="Add New Membership">
             </form>
 
@@ -111,19 +111,19 @@
 
             <div id="membership-cards">
                 <div class="modal-content">
-                    <div class="modal-card" id="np-card">
+                    <div class="modal-card">
                         <h4>NP Membership</h4>
                         <a href="#" onclick="openModal('np-modal')">Learn More</a>
                     </div>
-                    <div class="modal-card" id="bronze-card">
+                    <div class="modal-card">
                         <h4>Bronze Membership</h4>
                         <a href="#" onclick="openModal('bronze-modal')">Learn More</a>
                     </div>
-                    <div class="modal-card" id="silver-card">
+                    <div class="modal-card">
                         <h4>Silver Membership</h4>
                         <a href="#" onclick="openModal('silver-modal')">Learn More</a>
                     </div>
-                    <div class="modal-card" id="gold-card">
+                    <div class="modal-card">
                         <h4>Gold Membership</h4>
                         <a href="#" onclick="openModal('gold-modal')">Learn More</a>
                     </div>
@@ -135,19 +135,19 @@
         <dialog id="membership-cards-modal">
             <div class="modal-content">
                 <h3>Our Memberships:</h3>
-                <div class="modal-card" id="np-card">
+                <div class="modal-card">
                     <h4>Non-Profit</h4>
                     <a href="#" onclick="openModal('np-modal')">Learn More</a>
                 </div>
-                <div class="modal-card" id="bronze-card">
+                <div class="modal-card">
                     <h4>Bronze</h4>
                     <a href="#" onclick="openModal('bronze-modal')">Learn More</a>
                 </div>
-                <div class="modal-card" id="silver-card">
+                <div class="modal-card">
                     <h4>Silver</h4>
                     <a href="#" onclick="openModal('silver-modal')">Learn More</a>
                 </div>
-                <div class="modal-card" id="gold-card">
+                <div class="modal-card">
                     <h4>Gold</h4>
                     <a href="#" onclick="openModal('gold-modal')">Learn More</a>
                 </div>
