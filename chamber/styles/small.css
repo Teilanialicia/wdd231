@@ -104,7 +104,7 @@ button {
 
 #logo {
     width: 200px;
-    height: auto;
+    height: 200px;
 }
 
 .member-grid {
@@ -402,4 +402,100 @@ dialog {
 @keyframes fadeIn {
     0% { opacity: 0; }
     100% { opacity: 1; }
+}
+
+.discover-cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.discover-card {
+    display: grid;
+    grid-template-areas: 
+    "name"
+    "address"
+    "image"
+    "description"
+    "cost"
+    "button";
+    background-color: rgb(236, 236, 236);
+    padding: 1rem;
+    border: 2px solid black;
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+    width: fit-content;
+    height: 500px;
+    min-height: 500px;
+}
+
+.discover-card h2 {
+    grid-area: name;
+    padding-left: .25rem;
+    padding-right: .25rem;
+    padding-top: 1rem;
+    margin: 0;
+}
+
+.discover-card figure {
+    grid-area: image;
+    margin: 0;
+    width: min-content;
+    padding: .5rem .25rem;
+}
+
+.discover-card figure img {
+    width: 300px;
+    height: 200px;
+}
+  
+
+.discover-card figcaption {
+    font-size: .90rem;
+}
+
+.discover-card p {
+    grid-area: description;
+    font-size: 1.15rem;
+    padding: .5rem .25rem;
+}
+
+.discover-card address {
+    grid-area: address;
+    padding: 0 .25rem;
+}
+
+.discover-card button {
+    grid-area: button;
+    align-items: center;
+    background-color: var(--rusty-red);
+    border: 2px solid #111;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+    display: flex;
+    font-size: 1.25rem;
+    height: 48px;
+    justify-content: center;
+    line-height: 24px;
+    max-width: 100%;
+    text-align: center;
+    text-decoration: none;
+}
+
+.discover-modal {
+    width: 75%;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.discover-modal p {
+    color: white;
 }

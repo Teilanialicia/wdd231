@@ -1,10 +1,10 @@
 import {
-    getMemberInfo,
+    loadJsonData,
     memberCards,
     addClickListener
 } from "./functions.js";
 
-getMemberInfo()
+loadJsonData("members.json")
     .then(json => {
         memberCards(json);
     })

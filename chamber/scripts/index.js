@@ -1,5 +1,5 @@
 import {
-    getMemberInfo,
+    loadJsonData,
     memberCards,
     getRandomMembers,
     getWeather,
@@ -7,7 +7,7 @@ import {
 } from "./functions.js";
 
 // Create the 3 random member cards
-getMemberInfo()
+loadJsonData("members.json")
     .then(members => {
         // Filter the members to only be gold and silver members
         return getRandomMembers(members.filter(member => {

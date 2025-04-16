@@ -1,0 +1,74 @@
+[
+  {
+    "name": "Algonquin Provincial Park",
+    "address": "Ontario 60, Ontario K0J 2M0, Canada",
+    "description": "A massive natural park known for its hiking trails, canoeing routes, and fall colors. It's a prime destination for wildlife viewing.",
+    "image": "images/algonquin-park.webp",
+    "cost": 18.00,
+    "figureCaption": "View of Algonquin Park's forest and lake in early autumn.",
+    "url": "https://www.ontarioparks.ca/park/algonquin"
+  },
+  {
+    "name": "Santa's Village",
+    "address": "1624 Golden Beach Rd, Bracebridge, ON P1L 1W8, Canada",
+    "description": "A Christmas-themed amusement park with rides, games, and family attractions, perfect for kids and families.",
+    "image": "images/santas-village.webp",
+    "cost": 45.00,
+    "figureCaption": "Holiday decorations and rides at Santa’s Village in Bracebridge.",
+    "url": "https://www.santasvillage.ca/"
+  },
+  {
+    "name": "Muskoka Steamships & Discovery Centre",
+    "address": "275 Steamship Bay Rd, Gravenhurst, ON P1P 1Z9, Canada",
+    "description": "Explore Muskoka’s boating heritage and cruise the lakes on historic steamships like the RMS Segwun.",
+    "image": "images/muskoka-steamships.webp",
+    "cost": 40.00,
+    "figureCaption": "Historic steamship docked beside the Discovery Centre in Gravenhurst.",
+    "url": "https://realmuskoka.com/"
+  },
+  {
+    "name": "Lake Muskoka",
+    "address": "Lake Muskoka, Ontario, Canada",
+    "description": "A large scenic lake popular for boating, fishing, and cottage vacations. Surrounded by charming towns and resorts.",
+    "image": "images/lake-muskoka.webp",
+    "cost": 0.00,
+    "figureCaption": "Sunset over Lake Muskoka with boats docked along the shore.",
+    "url": "https://www.maztours.com/lake-muskoka"
+  },
+  {
+    "name": "Muskoka Brewery",
+    "address": "1964 Muskoka Beach Rd, Bracebridge, ON P1P 1R1, Canada",
+    "description": "Local craft brewery offering a variety of unique beers and a relaxing patio for tasting and tours.",
+    "image": "images/muskoka-brewery.webp",
+    "cost": 10.00,
+    "figureCaption": "Visitors enjoying the outdoor patio at Muskoka Brewery.",
+    "url": "https://muskokabrewery.com/"
+  },
+  {
+    "name": "Arrowhead Provincial Park",
+    "address": "451 Arrowhead Park Rd, Huntsville, ON P1H 2J4, Canada",
+    "description": "Known for its winter skating trail and summer hiking, Arrowhead is a year-round outdoor adventure spot.",
+    "image": "images/arrowhead-park.webp",
+    "cost": 18.00,
+    "figureCaption": "Skaters gliding along the ice trail in Arrowhead Provincial Park.",
+    "url": "https://www.ontarioparks.ca/park/arrowhead"
+  },
+  {
+    "name": "Dorset Scenic Lookout Tower",
+    "address": "1191 Dorset Scenic Tower Rd, Dorset, ON P0A 1E0, Canada",
+    "description": "Climb the 100-foot tower for panoramic views of Muskoka’s lakes and forests, especially stunning in the fall.",
+    "image": "images/dorset-tower.webp",
+    "cost": 5.00,
+    "figureCaption": "Panoramic view from the Dorset Lookout Tower in peak fall colors.",
+    "url": "https://www.algonquinhighlands.ca/explore-play/parks-and-outdoor-spaces/dorset-scenic-lookout-tower/"
+  },
+  {
+    "name": "Hardy Lake Provincial Park",
+    "address": "Highway 169, Torrance, ON P0C 1M0, Canada",
+    "description": "A quiet park with hiking trails, lakeside views, and no motorized boats — perfect for peaceful exploration.",
+    "image": "images/hardy-lake.webp",
+    "cost": 0.00,
+    "figureCaption": "Wooden footbridge and trail alongside Hardy Lake’s shoreline.",
+    "url": "https://www.ontarioparks.ca/park/hardylake"
+  }
+]

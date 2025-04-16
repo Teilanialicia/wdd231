@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Muskoka Chamber of Commerce Page">
+    <meta name="author" content="Teilani Norton">
+    <meta property="og:title" content="Muskoka Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://teilanialicia.github.io/wdd231/chamber/thankyou.html">
+    <meta property="og:image" content="https://ia.media-imdb.com/images/rock.jpg">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" as="font" href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet" >
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css" media="(min-width: 32rem)">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <link rel="preload" as="image" href="images/algonquin-park.webp" type="image/webp">
+    <link rel="icon" href="../favicon.png" type="image/x-icon">
+    
+    <title>Muskoka's Voice of Business</title>
+</head>      
+<body>
+    <header>
+        <div id="logo-container">
+            <img id="logo" src="images/logo.webp" alt="Company Logo" style="height: 200px; width: 200px;">
+        </div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="directory.html">Directory</a>
+            <a href="join.html">Join</a>
+            <a href="discover.html">Discover</a>
+        </nav>
+        <div class="dropdown">
+            <i class="fa fa-bars fa-2x"></i>
+            <div class="dropdown-content">
+                <a href="index.html">Home</a>
+                <a href="directory.html">Directory</a>
+                <a href="join.html">Join</a>
+                <a href="discover.html">Discover</a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="discover-cards">
+            <div class="discover-card">
+                <h2>Algonquin Provincial Park</h2>
+                <figure>
+                    <img src="images/algonquin-park.webp" alt="View of Algonquin Park's forest and lake in early autumn." loading="eager" fetchpriority="high">
+                    <figcaption>View of Algonquin Park's forest and lake in early autumn.</figcaption>
+                </figure>
+                <address>Ontario 60, Ontario K0J 2M0, Canada</address>
+                <p>A massive natural park known for its hiking trails, canoeing routes, and fall colors. It's a prime destination for wildlife viewing.  
+                Cost: 18.00CA$</p>
+                <button>Learn More</button>
+            </div>
+        </div>
+        <dialog class="discover-modal">
+            <p class="last-visit">You're kidding me.</p>
+        </dialog>
+    </main>
+    <footer>
+        <div class="footer-info">
+            <h3>Muskoka Chamber of Commerce</h3>
+            <p>10 Rue De La Paix</p>
+            <p>Muskoka, Canada 999</p>
+            <p>info@Muskokacc.org</p>
+            <p>(223) 555-2300</p>
+        </div>
+        <div id="social-media">
+            <a href="https://facebook.com"><img src="images/facebook_icon.svg" alt="facebook icon"></a>
+            <a href="https://twitter.com"><img src="images/twitter_icon.svg" alt="twitter icon"></a>
+            <a href="https://youtube.com"><img src="images/youtube_icon.svg" alt="youtube icon"></a>
+        </div>
+        <div class="footer-info">
+            <p>WDD231 Class Project</p>
+            <p>Teilani Norton</p>
+            <p id="copyright"></p>
+            <p id="last-modified"></p>
+        </div>
+    </footer>
+    <script type="module" src="scripts/discover.js"></script>
+</body>
+</html>
