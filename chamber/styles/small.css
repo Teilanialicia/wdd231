@@ -311,9 +311,10 @@ textarea {
     width: 75%;
 }
 
-:modal {
+dialog[open] {
     background-color: var(--rusty-red);
     animation: fadeIn .5s;
+    width: max-content;
     /* color: var(--rusty-red); */
 }
 
