@@ -1,0 +1,298 @@
+:root {
+  --sky-blue: #BCD3F2;
+  --oxford-blue: #0A1E33;
+  --columbia-blue: #80A4ED;
+  --sage: #D4CB92;
+  --background-color: #E6E1C5;
+  --white: #fff;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #E6E1C5;
+  color: var(--oxford-blue);
+}
+
+nav {
+  background-color: var(--oxford-blue);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+
+nav ul {
+  display: none;
+}
+
+i {
+  color: var(--white);
+}
+
+h4 {
+  margin: 0;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--sky-blue);
+}
+
+header, footer {
+  text-align: center;
+  background-color: var(--sky-blue);
+  color: var(--oxford-blue);
+}
+
+footer {
+  padding: 1rem 0;
+}
+
+.footer-info p {
+  margin: 0;
+}
+
+.header-content {
+  padding: 3rem 2rem 1.5rem;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  right: 2.2rem;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  width: 12rem;
+  height: auto;
+  flex-direction: column;
+}
+
+.dropdown-content a {
+  width: 100%;
+  color: black;
+  padding: 12px 16px;
+  font-size: 1.25rem;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--background-color);
+  background-color: var(--white);
+  height: 2.5rem;
+  text-align: center;
+}
+
+.dropdown {
+  position: absolute;
+  right: 1em;
+  top: 1em;
+}
+
+.grid-container {
+  padding: 2rem;
+  display: grid;
+  flex-direction: column;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  max-width: 60rem;
+  margin: auto;
+}
+
+.flex-container {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  max-width: 80rem;
+  margin: auto;
+}
+
+.banner {
+  background-color: var(--white);
+  border-left: 6px solid var(--sage);
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+.card {
+  background-color: var(--white);
+  border-left: 6px solid var(--sage);
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+  max-width: 400px;
+}
+
+.card a {
+  color: blue;
+  width: 100%;
+}
+
+.card-container p {
+  margin: 0 0 1rem 0;
+}
+
+.card-container h3 {
+  text-align: center;
+  margin: 0 0 1rem 0;
+}
+
+.grid-container.columns-1 .card {
+  animation: slideRight .8s, fadeIn 1.5s;
+}
+
+h1, h2 {
+  color: var(--oxford-blue);
+}
+
+.verdana {
+  font-family: Verdana, sans-serif;
+}
+
+.geneva {
+  font-family: Geneva, sans-serif;
+}
+
+.tahoma {
+  font-family: Tahoma, sans-serif;
+}
+
+a {
+  color: var(--columbia-blue);
+}
+
+/* Site Name Section */
+#site-name {
+  background-color: #f0f4f8;
+  padding: 1.5rem;
+  border-radius: 12px;
+  margin-bottom: 2rem;
+}
+
+#site-name h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+#site-name p {
+  font-size: 1.1rem;
+  color: #555;
+}
+
+.site-title {
+  font-weight: bold;
+  color: #2b2b2b;
+}
+
+form {
+  display: grid;
+}
+
+label {
+  margin-top: 1em;
+  margin-left: 2vh;
+  font-size: 1.2em;
+}
+
+input,
+select {
+  margin-bottom: 1em;
+  height: 32px;
+  margin-left: 2vh;
+  width: 75%;
+  font-size: 1.25em;
+}
+
+.input-field {
+  background-color: white;
+  border-radius: 3px;
+}
+
+.input-field:required {
+  border-left: 8px solid var(--oxford-blue);
+}
+
+textarea {
+  height: 10rem;
+  margin-bottom: 1em;
+  margin-left: 2vh;
+  width: 75%;
+  font-size: 1.1rem;
+  font-family: inherit;
+}
+
+#submit {
+  font-family: inherit;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: var(--oxford-blue);
+  color: var(--white);
+  width: fit-content;
+  height: fit-content;
+  padding: .5rem;
+}
+
+#membership-dropdown {
+  display: flex;
+  align-items: center;
+}
+
+.sources {
+  display: flex;
+  flex-direction: column;
+  width: max-content;
+}
+
+.sources a {
+  width: max-content;
+}
+
+#resources {
+  color: black;
+}
+
+#submitted-info {
+  padding: 0 1rem
+}
+
+.program-section div {
+  margin: 1rem 0 0;
+}
+
+.flex-container h2 {
+  margin: 0;
+}
+
+#fields-image {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#fields-image img {
+  max-width: 100%;
+}
+
+@keyframes slideRight {
+  from {
+    transform: translateX(-10vw);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 100;
+  }
+}

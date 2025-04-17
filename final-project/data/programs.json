@@ -1,0 +1,94 @@
+{
+    "counseling_phd_programs": {
+        "name": "Counseling Psychology Ph.D. Programs",
+        "programs": [
+            {
+                "university": "University of Denver (DU)",
+                "program": "Ph.D. in Counseling Psychology",
+                "focus": "Lifespan development, trauma, multicultural approaches",
+                "features": "APA-accredited, strong emphasis on applied practice and cultural competency",
+                "concentrations": [],
+                "purpose": "Prepare psychologists to address mental health from a lifespan and trauma-informed lens",
+                "website": "https://morgridge.du.edu/academics-advising/programs-gr/phd-counseling-psychology"
+            },
+            {
+                "university": "University of Northern Colorado (UNC)",
+                "program": "Ph.D. in Counseling Psychology",
+                "focus": "Generalist training with trauma exposure in clinical practicum",
+                "features": "Focus on individual and group interventions, diversity, and vocational development",
+                "concentrations": [],
+                "purpose": "Prepares licensed psychologists with training that includes trauma and lifespan development",
+                "website": "https://unco.smartcatalogiq.com/en/2013-2014/graduate-catalog/college-of-education-and-behavioral-sciences-ebs/department-of-applied-psychology-and-counselor-education/counseling-psychology-phd"
+            }
+        ]
+    },
+    "counseling_masters_programs": {
+        "name": "Counseling Master's Programs",
+        "programs": [
+            {
+                "university": "University of Texas at Austin",
+                "program": "Master of Education (M.Ed.) in Counselor Education",
+                "focus": "Counseling for educational, health, and community settings",
+                "features": "Prepares for LPC certification, opportunities in higher education advising and career counseling",
+                "concentrations": [],
+                "purpose": "Provides foundational counseling skills for practice in school and community settings",
+                "website": "https://education.utexas.edu/academics/masters/ce-masters-program/"
+            },
+            {
+                "university": "Texas State University",
+                "program": "Master of Arts in Professional Counseling",
+                "focus": "Mental health, family, and school-based counseling",
+                "features": "60 credit hours, CACREP accredited, prepares for LPC licensure, hybrid format",
+                "concentrations": [
+                    "Clinical Mental Health Counseling",
+                    "Marriage, Couple and Family Counseling",
+                    "School Counseling"
+                ],
+                "purpose": "Prepares graduates for licensure and clinical counseling practice",
+                "website": "https://www.txst.edu/clas/professional-counseling.html"
+            }
+        ]
+    },
+    "clinical_phd_programs": {
+        "name": "Clinical Psychology Ph.D. Programs",
+        "programs": [
+            {
+                "university": "University of Colorado Colorado Springs (UCCS)",
+                "program": "Ph.D. in Clinical Psychology with Trauma Emphasis",
+                "focus": "Childhood trauma, PTSD, trauma across the lifespan",
+                "features": "Veterans Health and Trauma Clinic, hands-on trauma research, clinical internships",
+                "concentrations": [],
+                "purpose": "Doctoral-level training in clinical psychology with trauma emphasis",
+                "website": "https://psychology.uccs.edu/academics/clinical-trauma-phd/trauma"
+            }
+        ]
+    },
+    "psychology_masters_prep": {
+        "name": "Psychology Master's Programs (Ph.D. Prep)",
+        "programs": [
+            {
+                "university": "Texas State University",
+                "program": "M.A. in Psychological Research (MAPR)",
+                "focus": "Research-based psychology training",
+                "features": "Strong emphasis on research design, statistics, and faculty-led research experience",
+                "concentrations": [],
+                "purpose": "Designed for students who need research experience before applying to Ph.D. programs",
+                "website": "https://www.psych.txst.edu/degrees-programs/graduate/mapr.html"
+            }
+        ]
+    },
+    "advice": {
+        "name": "Advice and Strategic Insight",
+        "programs": [
+            {
+                "university": "Personal Advice",
+                "program": "",
+                "focus": "Counseling Psychology Ph.D. programs may be slightly less competitive than Clinical Psychology Ph.D. programs, depending on the institution.",
+                "features": "Often value strengths-based, multicultural, and lifespan-oriented training; tend to attract applicants interested in trauma-informed and developmentally rooted therapy work",
+                "concentrations": [],
+                "purpose": "Encouragement and advice for students transitioning from unrelated undergrad degrees into psychology graduate programs",
+                "website": "index.html"
+            }
+        ]
+    }
+}

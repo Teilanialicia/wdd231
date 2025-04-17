@@ -1,0 +1,83 @@
+[
+    {
+        "title": "Neuropsychologist",
+        "salary": "$128,160",
+        "description": "Studies how brain function affects behavior and cognition.",
+        "responsibilities": "Assess and treat brain injuries, conduct cognitive testing, collaborate with medical teams.",
+        "education": "Doctorate (Ph.D. or Psy.D.)",
+        "licensure": "State licensure as a psychologist + postdoctoral training in neuropsychology",
+        "source": "https://www.rivier.edu/"
+    },
+    {
+        "title": "Engineering Psychologist",
+        "salary": "$105,000",
+        "description": "Enhances technology and product design by studying human interaction with systems.",
+        "responsibilities": "Optimize human-system interaction, conduct usability testing, improve safety and efficiency.",
+        "education": "Master's or Ph.D. in Psychology or Human Factors",
+        "licensure": "Licensure generally not required (non-clinical)",
+        "source": "https://www.rivier.edu/"
+    },
+    {
+        "title": "Industrial-Organizational Psychologist",
+        "salary": "$113,320",
+        "description": "Industrial-organizational psychologists use psychological principles to improve workplace productivity, employee morale, and organizational effectiveness.",
+        "responsibilities": "Improve workplace outcomes through assessments, employee training, and organizational strategy development.",
+        "education": "Master's degree typically required; doctorate preferred for advanced roles or certification",
+        "licensure": "Licensure may be required depending on state regulations",
+        "source": "https://www.rivier.edu/"
+    },
+    {
+        "title": "Clinical and Counseling Psychologist",
+        "salary": "$139,160",
+        "description": "Provide mental health care by diagnosing and treating emotional, behavioral, and psychological disorders through therapy and intervention strategies.",
+        "responsibilities": "Diagnose and treat mental health disorders using psychological assessments and therapy, sometimes collaborating with medical professionals.",
+        "education": "Doctor of Psychology (PsyD or PhD)",
+        "licensure": "State licensure required",
+        "source": "https://www.rivier.edu/"
+    },
+    {
+        "title": "Forensic Psychologist",
+        "salary": "$74,805",
+        "description": "Apply psychology within the legal and criminal justice system, assisting with criminal profiling, competency evaluations, and expert testimony.",
+        "responsibilities": "Conduct evaluations, provide expert testimony, and support legal professionals with psychological insights.",
+        "education": "Doctoral degree in psychology",
+        "licensure": "Licensure required to practice independently; legal training optional but beneficial",
+        "source": "https://www.rivier.edu/"
+    },
+    {
+        "title": "Substance Abuse Counselor",
+        "salary": "$53,710",
+        "description": "Help individuals recover from drug, alcohol, and behavioral addictions by providing therapeutic support and guidance through recovery programs.",
+        "responsibilities": "Assess clients, guide them through recovery plans, and support behavior change through counseling and therapy.",
+        "education": "At least a bachelor's degree; master's preferred for clinical roles",
+        "licensure": "Licensure typically required for independent practice",
+        "source": "https://www.rivier.edu/"
+    },
+    {
+        "title": "Sport Psychologist",
+        "salary": "$102,000",
+        "description": "Support athletes by improving their mental well-being and performance through psychological strategies and therapy.",
+        "responsibilities": "Help athletes manage stress, recover from injuries, and improve focus and motivation through mental training.",
+        "education": "Master's or doctoral degree in psychology or related fields (e.g., counseling, sports science)",
+        "licensure": "Licensure required for clinical practice",
+        "source": "https://www.rivier.edu/"
+    },
+    {
+        "title": "Military Psychologist",
+        "salary": "$104,303",
+        "description": "Serve military personnel and veterans by conducting evaluations, providing therapy, and supporting mental health and performance under high-stress conditions.",
+        "responsibilities": "Evaluate service members' mental health, provide therapy, and support deployment readiness and crisis response.",
+        "education": "Doctoral degree in psychology",
+        "licensure": "Licensure required; may serve as enlisted officer",
+        "source": "https://www.rivier.edu/"
+    },
+    {
+        "title": "Psychiatrist",
+        "salary": "$299,470",
+        "description": "As medical doctors, psychiatrists diagnose mental health conditions and provide treatment plans, including medication management.",
+        "responsibilities": "Diagnose mental illnesses, prescribe medications, and oversee treatment plans in collaboration with other mental health professionals.",
+        "education": "Medical degree (M.D. or D.O.) with a residency in psychiatry",
+        "licensure": "Medical license and board certification in psychiatry required",
+        "source": "https://www.rivier.edu/"
+    }  
+]

@@ -1,51 +1,91 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Home | Psych Grad Planner</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="icon" href="logo.svg" type="image/svg+xml">
-</head>
-<body>
-  <nav>
-    <div class="logo">Psych Grad Planner</div>
-    <ul>
-      <li><a href="index.html" class="active">Home</a></li>
-      <li><a href="programs.html">Grad Programs</a></li>
-      <li><a href="career-paths.html">Career Paths</a></li>
-      <li><a href="resources.html">Resources</a></li>
-    </ul>
-  </nav>
+<html lang="en-us">
 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Introduces the premise of the entire Psychology website.">
+  <meta name="author" content="Teilani Norton">
+  <meta property="og:title" content="Psychology Graduate Planner">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://teilanialicia.github.io/wdd231/final-project/index.html">
+  <meta property="og:image" content="https://ia.media-imdb.com/images/rock.jpg">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Home | Psychology Graduate Planner</title>
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/larger.css">
+  <script src="scripts/index.js" type="module"></script>
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+</head>
+
+<body>
   <header>
-    <h1>Welcome to Psych Grad Planner</h1>
-    <p>A personal guide to navigating graduate school and career paths in psychology</p>
+    <nav>
+      <div class="logo">Psychology Graduate Planner</div>
+      <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="programs.html">Graduate Programs</a></li>
+        <li><a href="career-paths.html">Career Paths</a></li>
+        <li><a href="contactme.html">Contact Me</a></li>
+      </ul>
+    </nav>
+    <div class="dropdown">
+      <i class="fa fa-bars fa-2x"></i>
+      <div class="dropdown-content">
+        <a href="index.html">Home</a>
+        <a href="programs.html">Graduate Programs</a>
+        <a href="career-paths.html">Career Paths</a>
+        <a href="contactme.html">Contact me</a>
+      </div>
+    </div>
+    <div class="header-content">
+      <h1>Welcome to the Psychology Graduate Planner</h1>
+      <p>A personal guide to navigating graduate school and career paths in psychology</p>
+    </div>
   </header>
 
-  <div class="container">
-    <section class="card">
-      <h2>About This Project</h2>
-      <p>This website is a final project for my web development class — but it’s also something much more personal. I’m using it to organize my research and thoughts as I prepare to apply to psychology graduate programs.
-      <br><br>
-      With ADHD, anxiety, and a deep love of psychology, I wanted a space where I could break everything down visually and calmly. This planner is for me — and maybe for others like me who are navigating similar questions.
-      </p>
-    </section>
+  <main>
+    <div class="grid-container columns-1">
+      <section class="banner">
+        <h2>About This Project</h2>
+        <p>This website is a final project for my web development class — but it's also something much more personal.
+          I'm
+          using it to organize my research and thoughts as I prepare to apply to psychology graduate programs.
+          <br><br>
+          With ADHD, anxiety, and a deep love of psychology, I wanted a space where I could break everything down
+          visually
+          and calmly. This planner is for me — and maybe for others like me who are navigating similar questions.
+        </p>
+      </section>
 
-    <section class="card">
-      <h2>My Goal</h2>
-      <p>I’m especially interested in becoming a <strong>clinical psychologist</strong> who can do both therapy and assessments. I want to understand what the path looks like — especially since I’m coming from a non-psych undergrad background.
-      </p>
-    </section>
+      <section class="banner">
+        <h2>My Goal</h2>
+        <p>I'm especially interested in becoming a <strong>clinical psychologist</strong> who can do both therapy and
+          assessments. I want to understand what the path looks like — especially since I'm coming from a non-psych
+          undergrad background.
+        </p>
+      </section>
 
-    <section class="card">
-      <h2>Explore the Site</h2>
-      <ul>
-        <li><strong>Grad Programs:</strong> Research, timelines, degrees, and transition tips</li>
-        <li><strong>Career Paths:</strong> What you can do with each degree (Ph.D., master’s, etc.)</li>
-        <li><strong>Resources:</strong> Infographics, book recs, sample syllabi, application checklists</li>
-      </ul>
-    </section>
-  </div>
+      <section class="banner final-banner">
+        <h2>Explore the Site</h2>
+        <ul>
+          <li><strong>Graduate Programs:</strong> Research, timelines, degrees, and transition tips</li>
+          <li><strong>Career Paths:</strong> What you can do with each degree (Ph.D., master's, etc.)</li>
+          <li><strong>Resources:</strong> Infographics, book recs, sample syllabi, application checklists</li>
+        </ul>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-info">
+      <p>Psychology Graduate Planner</p>
+      <p>WDD231 Class Project</p>
+      <p id="copyright">©Teilani Norton</p>
+      <p id="last-modified">Last modified:</p>
+      <a href="resources.html" id="resources">Resources</a>
+    </div>
+  </footer>
 </body>
+
 </html>
