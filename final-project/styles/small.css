@@ -143,7 +143,7 @@ footer {
   margin: 0 0 1rem 0;
 }
 
-.grid-container.columns-1 .card {
+.grid-container.columns-1 .banner {
   animation: slideRight .8s, fadeIn 1.5s;
 }
 
